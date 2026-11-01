@@ -1,4 +1,8 @@
 
+/* =================================
+   BANGALI TECH - LAPTOP PAGE
+   ================================= */
+
 * {
     margin: 0;
     padding: 0;
@@ -10,144 +14,97 @@ html {
 }
 
 body {
-    font-family: Arial, sans-serif;
-    background: #f4f7fc;
-    color: #101828;
+    font-family: 'Hind Siliguri', sans-serif;
+    background: #f4f7fb;
+    color: #17243b;
+    line-height: 1.6;
 }
 
-/* Header */
 
-.header {
-    background: #07111f;
-    color: white;
-    padding: 18px 7%;
+/* =================================
+   HEADER - SAME AS MAIN WEBSITE
+   ================================= */
+
+header {
+    width: 100%;
+    min-height: 90px;
+    background: #10182d;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    flex-wrap: wrap;
-    gap: 20px;
+    padding: 12px 7%;
+    gap: 25px;
+    box-shadow: 0 3px 15px rgba(0, 0, 0, 0.15);
 }
 
 .brand {
     display: flex;
     align-items: center;
     gap: 12px;
-    color: white;
-    text-decoration: none;
+    flex-shrink: 0;
 }
 
 .brand img {
-    width: 48px;
-    height: 48px;
+    width: 68px;
+    height: 68px;
     object-fit: contain;
+    flex-shrink: 0;
 }
 
-.brand h1 {
-    font-size: 23px;
+.logo h1 {
+    color: #ffffff;
+    font-size: 30px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
 }
 
-.brand p {
-    font-size: 11px;
-    color: #aab7c8;
-    margin-top: 4px;
+.logo p {
+    color: #a9b9d1;
+    font-size: 13px;
 }
 
-nav {
+/* Navigation */
+
+nav ul {
     display: flex;
-    gap: 25px;
-    flex-wrap: wrap;
+    align-items: center;
+    list-style: none;
+    gap: 30px;
 }
 
-nav a {
-    color: #dce5f1;
+nav ul li a {
+    color: #e5edfa;
     text-decoration: none;
-    font-size: 14px;
-    transition: 0.3s;
-}
-
-nav a:hover {
-    color: #38a5ff;
-}
-
-/* Hero */
-
-.hero {
-    text-align: center;
-    padding: 100px 20px;
-    background: linear-gradient(135deg, #071b35, #087ac5);
-    color: white;
-}
-
-.eyebrow {
-    color: #8bd0ff;
-    font-size: 12px;
-    letter-spacing: 3px;
-    font-weight: bold;
-}
-
-.hero h2 {
-    font-size: clamp(30px, 5vw, 48px);
-    margin: 18px 0;
-}
-
-.hero > p:not(.eyebrow) {
-    color: #d9eaff;
     font-size: 16px;
-}
-
-.hero-btn {
-    display: inline-block;
-    margin-top: 28px;
-    padding: 13px 28px;
-    background: white;
-    color: #086db5;
-    border-radius: 7px;
-    text-decoration: none;
-    font-weight: bold;
+    font-weight: 600;
     transition: 0.3s;
 }
 
-.hero-btn:hover {
-    background: #d9efff;
-    transform: translateY(-3px);
+nav ul li a:hover {
+    color: #28a9ff;
 }
 
-/* Products */
+
+/* =================================
+   LAPTOP PRODUCTS
+   ================================= */
 
 .products {
-    padding: 75px 7%;
-}
-
-.section-heading {
-    text-align: center;
-    margin-bottom: 40px;
-}
-
-.section-heading > p {
-    color: #087bc6;
-    font-size: 12px;
-    font-weight: bold;
-    letter-spacing: 2px;
-}
-
-.section-heading h2 {
-    font-size: 32px;
-    margin: 10px 0;
-}
-
-.section-heading span {
-    color: #718096;
-    font-size: 14px;
+    width: 100%;
+    padding: 55px 7%;
+    min-height: 450px;
 }
 
 .product-grid {
     display: grid;
     grid-template-columns: repeat(3, minmax(0, 1fr));
     gap: 25px;
+    max-width: 1250px;
+    margin: 0 auto;
 }
 
 .product-card {
-    background: white;
+    background: #ffffff;
     border-radius: 12px;
     overflow: hidden;
     border: 1px solid #e5eaf1;
@@ -163,25 +120,15 @@ nav a:hover {
     height: 210px;
     background: #eaf2fa;
     display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
-    position: relative;
+    padding: 15px;
 }
 
-.product-image > span {
-    position: absolute;
-    top: 14px;
-    left: 14px;
-    background: #d5ebff;
-    color: #086db5;
-    padding: 6px 10px;
-    border-radius: 20px;
-    font-size: 11px;
-}
-
-.laptop-icon {
-    font-size: 85px;
+.product-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
 }
 
 .product-info {
@@ -195,15 +142,16 @@ nav a:hover {
     letter-spacing: 1px;
 }
 
-.product-info h3 {
+.product-info h2 {
     margin: 10px 0;
     font-size: 20px;
+    color: #17243b;
 }
 
-.description {
+.specs {
     font-size: 13px;
     color: #718096;
-    line-height: 1.6;
+    line-height: 1.8;
 }
 
 .product-bottom {
@@ -228,86 +176,273 @@ nav a:hover {
     border: none;
     padding: 9px 12px;
     border-radius: 6px;
+    font-family: inherit;
     font-size: 11px;
 }
 
-/* About */
 
-.about {
-    text-align: center;
-    padding: 55px 20px;
-    background: #e8f1fa;
+/* =================================
+   FOOTER - SAME AS MAIN WEBSITE
+   ================================= */
+
+.main-footer {
+    width: 100%;
+    background: #080d18;
+    color: #b8c7dc;
+    margin-top: 20px;
+    padding: 55px 7% 0;
 }
 
-.about h2 {
+/* Footer Columns */
+
+.footer-container {
+    max-width: 1250px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1.4fr 1fr 1fr 1fr;
+    gap: 40px;
+    padding-bottom: 40px;
+}
+
+.footer-column h3 {
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.footer-column h3::after {
+    content: "";
+    display: block;
+    width: 35px;
+    height: 3px;
+    background: #078bdc;
+    margin-top: 8px;
+    border-radius: 5px;
+}
+
+/* Footer Logo */
+
+.footer-column .footer-logo {
+    font-size: 27px;
+    color: #ffffff;
     margin-bottom: 12px;
 }
 
-.about p {
-    color: #64748b;
+.footer-column .footer-logo::after {
+    width: 50px;
 }
 
-/* Footer */
+/* Footer Description */
 
-footer {
+.footer-description {
+    color: #aab8cc;
+    font-size: 14px;
+    line-height: 1.9;
+    margin-bottom: 20px;
+}
+
+/* Contact Information */
+
+.contact-info p {
+    color: #b8c7dc;
+    font-size: 14px;
+    margin-bottom: 12px;
+    overflow-wrap: anywhere;
+}
+
+.contact-info span {
+    color: #168fe0;
+    margin-right: 7px;
+}
+
+/* Footer Lists */
+
+.footer-column ul {
+    list-style: none;
+}
+
+.footer-column ul li {
+    margin-bottom: 11px;
+}
+
+.footer-column ul li a {
+    color: #aab8cc;
+    text-decoration: none;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.footer-column ul li a:hover {
+    color: #28a9ff;
+    padding-left: 5px;
+}
+
+/* Social Media */
+
+.footer-social {
+    max-width: 1250px;
+    margin: 0 auto;
     text-align: center;
-    padding: 45px 20px 20px;
-    background: #07111f;
-    color: white;
+    padding: 25px 0;
+    border-top: 1px solid #263247;
 }
 
-footer h2 {
-    margin-bottom: 10px;
+.footer-social h3 {
+    color: #ffffff;
+    font-size: 18px;
+    margin-bottom: 15px;
 }
 
-footer p {
-    color: #aab7c8;
-    margin: 8px 0;
+.social-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.social-links a {
+    color: #b8c7dc;
+    text-decoration: none;
+    font-size: 14px;
+    padding: 8px 18px;
+    border: 1px solid #34445f;
+    border-radius: 6px;
+    transition: 0.3s;
+}
+
+.social-links a:hover {
+    color: #ffffff;
+    background: #0878df;
+    border-color: #0878df;
+}
+
+/* Copyright */
+
+.footer-bottom {
+    width: 100%;
+    border-top: 1px solid #263247;
+    padding: 20px 10px;
+    text-align: center;
+}
+
+.footer-bottom p {
+    color: #8e9db3;
     font-size: 13px;
 }
 
-footer > a {
-    display: inline-block;
-    margin-top: 15px;
-    color: #55b7ff;
-    text-decoration: none;
-}
 
-.copyright {
-    border-top: 1px solid #263448;
-    margin-top: 30px;
-    padding-top: 18px;
-    color: #8292a8;
-    font-size: 12px;
-}
+/* =================================
+   TABLET RESPONSIVE
+   ================================= */
 
-/* Responsive */
+@media screen and (max-width: 900px) {
 
-@media (max-width: 850px) {
+    header {
+        padding: 15px 4%;
+    }
+
+    .brand img {
+        width: 58px;
+        height: 58px;
+    }
+
+    .logo h1 {
+        font-size: 26px;
+    }
+
+    nav ul {
+        gap: 15px;
+    }
+
     .product-grid {
         grid-template-columns: repeat(2, minmax(0, 1fr));
     }
 
-    .header {
-        justify-content: center;
+    .footer-container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 35px;
     }
 }
 
-@media (max-width: 550px) {
-    .product-grid {
-        grid-template-columns: 1fr;
-    }
 
-    nav {
-        justify-content: center;
+/* =================================
+   MOBILE RESPONSIVE
+   ================================= */
+
+@media screen and (max-width: 600px) {
+
+    header {
+        flex-direction: column;
+        text-align: center;
+        padding: 15px 12px;
         gap: 15px;
     }
 
-    .hero {
-        padding: 75px 18px;
+    .brand {
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .brand img {
+        width: 58px;
+        height: 58px;
+    }
+
+    .logo h1 {
+        font-size: 25px;
+    }
+
+    .logo p {
+        font-size: 11px;
+    }
+
+    nav {
+        width: 100%;
+    }
+
+    nav ul {
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 10px 18px;
+    }
+
+    nav ul li a {
+        font-size: 14px;
     }
 
     .products {
-        padding: 55px 6%;
+        padding: 40px 15px;
+    }
+
+    .product-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .product-image {
+        height: 230px;
+    }
+
+    /* Footer Mobile */
+
+    .main-footer {
+        padding: 40px 22px 0;
+    }
+
+    .footer-container {
+        grid-template-columns: 1fr;
+        gap: 30px;
+        padding-bottom: 30px;
+    }
+
+    .footer-column h3 {
+        margin-bottom: 15px;
+    }
+
+    .footer-social {
+        padding: 22px 0;
     }
 }
